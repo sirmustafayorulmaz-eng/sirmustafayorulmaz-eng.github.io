@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="Mustafa Yorulmaz — chess lessons, strategic thinking, and a lifelong pursuit of improvement.">
+  <title>Mustafa Yorulmaz — Chess & Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090909;--panel:#111110;--panel2:#171715;--text:#f3f0e8;--muted:#a5a197;--gold:#c8a96b;--gold2:#ead5a2;--line:rgba(232,218,185,.16);--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;z-index:-1;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+    a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;color:var(--gold);font-weight:700}.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}.serif{font-family:"Playfair Display",serif;font-weight:500;letter-spacing:-.035em}header{position:sticky;top:0;z-index:10;background:rgba(9,9,9,.84);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-size:.85rem;font-weight:700;letter-spacing:.08em}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--gold);color:var(--gold);font-family:"Playfair Display",serif;font-size:1.1rem}.nav-links{display:flex;gap:30px;align-items:center;font-size:.83rem;color:#c7c2b8}.nav-links a:hover{color:var(--gold2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:13px 19px;border:1px solid var(--gold);color:var(--bg);background:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:.04em;transition:.25s}.nav-cta:hover,.btn:hover{background:var(--gold2);border-color:var(--gold2);transform:translateY(-2px)}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px}
+    .hero{min-height:690px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}.hero:after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;right:-100px;top:30px;background:radial-gradient(circle,rgba(200,169,107,.12),transparent 68%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;padding:90px 0 100px}.hero h1{font-size:clamp(3.7rem,7.5vw,7.2rem);line-height:.99;margin:25px 0 24px;max-width:700px}.hero h1 span{color:var(--gold);font-style:italic}.hero-copy{font-size:1.05rem;color:#b5b0a5;max-width:500px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn-secondary{background:transparent;color:var(--text);border-color:var(--line)}.btn-secondary:hover{border-color:var(--gold);background:rgba(200,169,107,.06)}.hero-note{display:flex;gap:12px;align-items:center;color:#89857c;font-size:.75rem;margin-top:35px}.hero-note:before{content:"";height:1px;width:36px;background:#5e584b}.chess-art{position:relative;min-height:440px;display:grid;place-items:center}.halo{position:absolute;width:min(100%,430px);aspect-ratio:1;border:1px solid rgba(200,169,107,.28);border-radius:50%;box-shadow:0 0 100px rgba(200,169,107,.05),inset 0 0 70px rgba(200,169,107,.04)}.halo:before,.halo:after{content:"";position:absolute;border:1px solid rgba(200,169,107,.16);border-radius:50%;inset:35px}.halo:after{inset:75px}.queen{position:relative;z-index:1;font-size:clamp(13rem,26vw,22rem);line-height:1;color:var(--gold);text-shadow:0 15px 60px rgba(200,169,107,.2);font-family:serif;filter:drop-shadow(0 10px 20px rgba(0,0,0,.8));animation:float 6s ease-in-out infinite}.art-caption{position:absolute;bottom:10px;right:0;text-align:right;color:#716c62;text-transform:uppercase;letter-spacing:.16em;font-size:.64rem}.art-caption strong{display:block;color:var(--gold);font-size:.75rem;margin-bottom:4px;font-weight:500}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    section{padding:110px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:50px}.section-head h2{font-size:clamp(2.4rem,4vw,4.3rem);line-height:1.05;margin:17px 0 0}.section-intro{max-width:360px;color:var(--muted);font-size:.92rem}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}.about-quote{border-left:1px solid var(--gold);padding:10px 0 10px 26px;font-family:"Playfair Display",serif;font-size:1.65rem;line-height:1.4;color:var(--gold2)}.about-copy p{color:#aaa59b;margin-top:0}.about-copy p+p{margin-top:18px}.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}.stat{border-top:1px solid var(--line);padding-top:17px}.stat strong{display:block;font-family:"Playfair Display",serif;font-size:1.45rem;color:var(--gold2);font-weight:500}.stat span{font-size:.72rem;color:#8d887e}
+    .lessons{background:linear-gradient(180deg,#0b0b0a,#11110f 50%,#0b0b0a);border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}.lesson-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.lesson-card{border:1px solid var(--line);background:rgba(255,255,255,.018);padding:29px;min-height:290px;transition:.25s}.lesson-card:hover{border-color:rgba(200,169,107,.6);transform:translateY(-4px);background:rgba(200,169,107,.035)}.card-no{font-size:.7rem;color:var(--gold);letter-spacing:.14em}.card-icon{font-size:1.6rem;margin:27px 0 13px;color:var(--gold2)}.lesson-card h3{font-family:"Playfair Display",serif;font-size:1.55rem;font-weight:500;margin:0 0 12px}.lesson-card p{color:var(--muted);font-size:.87rem;margin:0}.lesson-foot{margin-top:25px;color:#7d786e;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em}
+    .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.approach-panel{padding:35px;background:var(--panel);border:1px solid var(--line);position:relative}.approach-panel:before{content:"";position:absolute;top:-1px;left:35px;width:65px;height:2px;background:var(--gold)}.approach-panel h3{font-family:"Playfair Display",serif;font-weight:500;font-size:2rem;margin:0 0 22px}.steps{list-style:none;margin:0;padding:0}.steps li{display:flex;gap:16px;padding:17px 0;border-top:1px solid var(--line);color:#b8b2a7;font-size:.88rem}.steps span{color:var(--gold);font-size:.72rem;padding-top:4px}.approach-text h2{font-size:clamp(2.4rem,4vw,4rem);line-height:1.08;margin:18px 0 24px}.approach-text p{color:var(--muted);font-size:.95rem}.approach-text .small-note{font-size:.75rem;color:#7d786e;margin-top:24px}
+    .contact{padding:95px 0 105px}.contact-box{border:1px solid var(--line);padding:clamp(30px,6vw,75px);display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 100% 0%,rgba(200,169,107,.1),transparent 48%),#10100f}.contact-box h2{font-size:clamp(2.5rem,5vw,5rem);line-height:1.04;margin:18px 0}.contact-box p{color:var(--muted);max-width:550px}.contact-action{display:flex;flex-direction:column;gap:13px;align-items:flex-start}.contact-action small{color:#817c72;font-size:.7rem;max-width:230px}.contact-action a{white-space:nowrap}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:#777268;font-size:.72rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-name{color:#c4bdae;letter-spacing:.08em}.back-top{color:var(--gold)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:15px;padding:80px 0 60px}.hero{min-height:auto}.hero-copy{max-width:600px}.chess-art{min-height:330px}.halo{width:300px}.queen{font-size:15rem}.art-caption{right:8%;bottom:0}.about-grid,.approach-grid{grid-template-columns:1fr;gap:35px}.lesson-grid{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}.section-intro{max-width:580px}.contact-box{grid-template-columns:1fr}.contact-action{flex-direction:row;align-items:center;flex-wrap:wrap}}
+    @media(max-width:600px){.wrap{width:min(var(--max),calc(100% - 34px))}.nav{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:22px 24px;background:#0d0d0c;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.nav-cta{padding:10px 12px;font-size:.7rem}.brand{font-size:.72rem}.hero-grid{padding:65px 0 35px}.hero h1{font-size:clamp(3.5rem,16vw,5.2rem)}.hero-copy{font-size:.95rem}.chess-art{min-height:280px}.halo{width:250px}.queen{font-size:12.5rem}.art-caption{font-size:.57rem;right:2%;bottom:0}section{padding:75px 0}.section-head{margin-bottom:32px}.lesson-grid{grid-template-columns:1fr}.lesson-card{min-height:240px;padding:25px}.card-icon{margin:18px 0 10px}.stat-row{gap:9px}.stat strong{font-size:1.2rem}.stat span{font-size:.65rem}.about-quote{font-size:1.4rem}.approach-panel{padding:25px}.contact{padding:65px 0}.contact-box{padding:28px 22px}.contact-action{align-items:flex-start;flex-direction:column}.footer-inner{align-items:flex-start;flex-direction:column;gap:8px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Mustafa Yorulmaz home"><span class="brand-mark">MY</span><span>MUSTAFA YORULMAZ</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#lessons">Lessons</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">LET'S TALK <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">Chess lessons · Strategic thinking</div>
+          <h1 class="serif">Think deeper.<br>Play <span>better.</span></h1>
+          <p class="hero-copy">I'm Mustafa Yorulmaz. I help make the beautiful complexity of chess easier to understand—one position, one idea, and one move at a time.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#lessons">EXPLORE LESSONS <span aria-hidden="true">↘</span></a>
+            <a class="btn btn-secondary" href="#about">GET TO KNOW ME</a>
+          </div>
+          <div class="hero-note">A thoughtful approach to learning chess.</div>
+        </div>
+        <div class="chess-art reveal" aria-label="Decorative golden chess queen">
+          <div class="halo"></div>
+          <div class="queen" aria-hidden="true">♛</div>
+          <div class="art-caption"><strong>Every move has a meaning.</strong>Clarity over complexity · Progress over perfection</div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">A little about me</div><h2 class="serif">Chess is more than<br>a game.</h2></div>
+          <p class="section-intro">A space for curiosity, patience, and sharper decisions—on the board and beyond it.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-quote reveal">“The goal isn't just to find a move. It's to understand why it works.”</div>
+          <div class="about-copy reveal">
+            <p>I'm Mustafa Yorulmaz, and this is my personal space for chess lessons and strategic thinking. I believe learning chess becomes more rewarding when ideas are explained clearly and practice has a purpose.</p>
+            <p>Whether you're learning the fundamentals or looking to make your thinking more structured, lessons can focus on understanding positions, spotting patterns, and building a calmer decision-making process.</p>
+            <div class="stat-row">
+              <div class="stat"><strong>01</strong><span>Understand the position</span></div>
+              <div class="stat"><strong>02</strong><span>Explore candidate moves</span></div>
+              <div class="stat"><strong>03</strong><span>Learn from each game</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="lessons" id="lessons">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div><div class="eyebrow">What we can work on</div><h2 class="serif">Lessons with<br>a purpose.</h2></div>
+          <p class="section-intro">A flexible starting point for lessons. We can tailor the focus to your experience, goals, and the parts of chess you want to understand better.</p>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-card reveal"><div class="card-no">01 / THE FOUNDATIONS</div><div class="card-icon" aria-hidden="true">♙</div><h3>Build the basics</h3><p>Learn the rules, piece activity, basic tactics, checkmate patterns, and the habits that make a solid foundation.</p><div class="lesson-foot">For beginners</div></article>
+          <article class="lesson-card reveal"><div class="card-no">02 / THE THINKING</div><div class="card-icon" aria-hidden="true">♞</div><h3>See the position</h3><p>Practice evaluating positions, finding candidate moves, recognizing tactical patterns, and planning with intention.</p><div class="lesson-foot">For developing players</div></article>
+          <article class="lesson-card reveal"><div class="card-no">03 / THE REVIEW</div><div class="card-icon" aria-hidden="true">♛</div><h3>Learn from games</h3><p>Review your games to identify turning points, recurring mistakes, missed opportunities, and practical lessons.</p><div class="lesson-foot">Game analysis</div></article>
+        </div>
+      </div>
+    </section>
+    <section id="approach">
+      <div class="wrap approach-grid">
+        <div class="approach-panel reveal">
+          <h3>How a lesson can flow</h3>
+          <ol class="steps">
+            <li><span>01</span><div><strong>Set a goal</strong><br>Decide what you want to improve.</div></li>
+            <li><span>02</span><div><strong>Study together</strong><br>Work through positions and ideas step by step.</div></li>
+            <li><span>03</span><div><strong>Practice actively</strong><br>Try ideas, explain your thinking, and ask questions.</div></li>
+            <li><span>04</span><div><strong>Reflect and improve</strong><br>Leave with clear takeaways for your next games.</div></li>
+          </ol>
+        </div>
+        <div class="approach-text reveal">
+          <div class="eyebrow">The approach</div>
+          <h2 class="serif">Less memorising.<br>More understanding.</h2>
+          <p>Chess can feel overwhelming when every position seems to demand a perfect answer. A useful learning process breaks the game into manageable questions: What is changing? What matters most? Which moves deserve a closer look?</p>
+          <p>The aim is to develop your own thinking, not just hand you an answer. Curiosity, practice, and honest review are at the heart of lasting improvement.</p>
+          <p class="small-note">Lesson topics and format can be agreed together. No rating, certification, or coaching record is claimed on this page.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-box reveal">
+          <div><div class="eyebrow">Make your next move</div><h2 class="serif">Ready to talk<br>chess?</h2><p>Interested in lessons? Get in touch through your preferred channel and tell me a little about your experience and what you'd like to improve.</p></div>
+          <div class="contact-action">
+            <a class="btn" href="mailto:YOUR-EMAIL@example.com?subject=Chess%20lessons%20inquiry" id="emailLink">GET IN TOUCH <span aria-hidden="true">↗</span></a>
+            <small>Before publishing, replace the placeholder email address in <code>index.html</code> with your real contact email.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span class="footer-name">MUSTAFA YORULMAZ</span><span>Chess lessons · Strategy · Continuous improvement</span><a class="back-top" href="#home">BACK TO TOP ↑</a></div></footer>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation');
+      menuToggle.textContent = '☰';
+    }));
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
